@@ -1,0 +1,136 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    width: 40%
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+    border-left: 2px dotted #bdceda;
+    border-right: 2px dotted #bdceda;
+    height: auto;
+}
+
+form {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #bdceda;
+    border-radius: 6px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hashtagform {
+    margin: 0 auto;
+    text-align: left;
+    width: 75%;
+}
+
+.calendar {
+    width: 75%;
+    \\background-color: #f0f5f3;
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.february {
+    width: 49%;
+    float: left;
+}
+
+.march {
+    width: 49%;
+    float: left;
+    padding-left: 10px;
+}
+
+.numero {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background: #bdceda;
+    font-family: Verdana;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    display: grid;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 16px;
+}
+
+p .numero {
+    left: 20%
+}
+
+.text {
+    height: 100px;
+    backgrund: grey;
+    width: 65%;
+    font-size: 13.5px;
+    font-color: #bdceda;
+    padding: 1em;
+    margin: 0 auto;
+    display: block;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.twcontainer {
+    border: 0px solid #bdceda;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 100%;
+    \\border: 5px dotted #bdceda;
+    border-radius: 20px;
+    \\*display: block;
+    padding-top: 60px;
+}
+
+#tweets {
+    flex-basis: 2%;
+    padding: 5px;
+    padding-top: 10px;
+    vertical-align: top;
+}
