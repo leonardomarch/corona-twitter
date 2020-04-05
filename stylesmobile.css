@@ -24,63 +24,76 @@ h1 {
     text-align: center;
     line-height: 0;
     padding-top: 40px;
-    font-size: 4em;
+    font-size: 30px;
 }
 
 h2 {
-    display: block;
-    font-size: 2em;
-    border-top: 1px dotted #bdceda;
-    width: 100%;
-    padding-top: 10px;
-}
-
-h4 {
+    margin-top: 50px;
+    display: inline-block;
     text-align: center;
-    padding-top: 10px;
 }
 
 .container {
-    max-width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1em;
-    margin-top: 20px;
+    border-left: 2px dotted #bdceda;
+    border-right: 2px dotted #bdceda;
+    height: auto;
 }
 
 .container img {
+    width: 100%;
+    \\border: 5px dotted #bdceda;
+    border-radius: 20px;
+    \\*display: block;
+    padding-top: 60px;
+}
+
+//* Forms section   *//
+form {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type=text] {
     width: 60%;
-    border-radius: 0px;
-    float: right;
-    padding-left: 10px;
-    border-left: 1px solid #bdceda;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #bdceda;
+    border-radius: 6px;
+    margin: 0 auto;
+    align-items: center;
 }
 
-/* Forms section   */
-.filter {
+.hashtagform {
     text-align: left;
-    width: 30%;
+    width: 65%;
     display: block;
-    height: 30px;
-    background-color: #bdceda;
-    border: 0;
-    font-size: 1em;
-    font: white;
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
-.filter .hashtag {
+//* calendar *//
+.calendar {
+    \\background-color: #f0f5f3;
+    \\margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 100%
+}
+
+.february {
+    width: 49%;
     float: left;
 }
 
-.frame {
-    border-top: 1px solid #bdceda;
-    width: 33%;
-    display: inline-block;
-    padding-top: 20px
-}
-
-.item option {
-    width: 20px;
+.march {
+    width: 49%;
+    padding-left: 10px;
+    float: right;
 }
 
 .numero {
@@ -100,37 +113,34 @@ h4 {
     margin-bottom: 16px;
 }
 
-.slidecontainer {
-    width: 45%;
+p span {
+    display: block;
+    vertical-align: middle;
+    width: 65%;
 }
 
 .text {
     height: 100%;
-    width: 35%;
+    width: 65%;
     font-size: 1em;
     padding: 1em;
+    margin: 0 auto;
     display: block;
     line-height: 1.5;
     padding-bottom: 10px;
-    height: 100%;
-    padding-top: 10px;
-    margin-right: 10px;
+    height: 100%
 }
 
-/* Tweets section   */
 .twcontainer {
-    float: right;
-    width: 100%;
+    border-top: 1px solid #bdceda;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px;
 }
 
 .twcontainer img {
-    flex-basis: 5%;
+    flex-basis: 10%;
     padding: 5px;
-    margin: 0 auto;
-    border: 0;
-    display: block;
-    border-radius: 20px;
 }

@@ -11,7 +11,8 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="stylesmobile.css">
     <link rel="stylesheet" href="calendar.css" />
     <!-- Your styles should be called here -->
 
@@ -26,114 +27,60 @@
   <body>
     <!-- YOUR CONTENT GOES HERE -->
 
-    <div class="container">
+    <h1>COVID-19 Title Goes Here, Yes Right Here</h1>
 
-      <h1>COVID-19 one Tweet at the Time</h1>
-      <h5>By: Luca Powell and Leonardo March</h5>
+    <h4>By: Luca Powell and Leonardo March</h4>
+
+    <div class="container">
 
       <img src="img/world.svg">
 
-      <span class="text">Instructions. fasdf I'm baby pop-up farm-to-table truffaut, photo booth pitchfork PBR&B hashtag hexagon occupy hella prism cliche. Jianbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
+      <div class="text">
+        <strong>Instructions</strong>. fasdf I'm baby pop-up farm-to-table truffaut, photo booth pitchfork PBR&B hashtag hexagon occupy hella prism cliche. Jianbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
         distillery kickstarter
         chicharrones DIY <p> letterpress tote bag. Williamsburg air plant vinyl fanny pack, kombucha selvage cornhole. Craft beer tattooed artisan, hot chicken echo park bespoke forage trust fund microdosing actually poutine heirloom chambray tumeric
-          vaporware.</span>
-
-      <div class="hashtagform">
-        <form><label for="htag"><span class="numero">1.</span> Enter Hashtag</label>
-          <input type="text" id="htag" name="hashtag" placeholder="Enter Hashtag"></form>
+          photo booth pitchfoanbing raclette brooklyn twee sartorial ramps truffaut. Kombucha farm-to-table wolf,
+          distillery kickstarter
+          chicharrones DIY <p> letterpress tote bag. Williamsburg air plant vinyl fanny pack, kombucha selvage cornhole. Craft beer tattooed artisan, hot chicken echo park bespoke forage trust fund microdosing actually poutine heirloom chambray
+            tumeric
+            vaporware.
       </div>
 
-      <div class="hashtagform">
-        <form><label for="htag"><span class="numero">2.</span> Select Country</label>
-          <input type="text" id="htagcountry" name="hashtag" placeholder="Enter Country"></form>
-      </div>
-
-      <div class="calendar">
-        <div class="february">
-          <div class="month">
-            <ul>
-              <li>February 2020</li>
-            </ul>
-          </div>
-
-          <ul class="weekdays">
-            <li>Mo</li>
-            <li>Tu</li>
-            <li>We</li>
-            <li>Th</li>
-            <li>Fr</li>
-            <li>Sa</li>
-            <li>Su</li>
-          </ul>
-
-          <ul class="days">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li><span class="active">10</span></li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-
-          </ul>
-        </div>
-
-        <div class="march">
-          <div class="month">
-            <ul>
-              <li>March 2020</li>
-            </ul>
-          </div>
-
-          <ul class="weekdays">
-            <li>Mo</li>
-            <li>Tu</li>
-            <li>We</li>
-            <li>Th</li>
-            <li>Fr</li>
-            <li>Sa</li>
-            <li>Su</li>
-          </ul>
-
-          <ul class="days">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li><span class="active">10</span></li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-
-          </ul>
+      <div class="frame">
+        <div class="text"><span class="numero">1.</span>Choose a hashtag </div>
+        <div class="hashtag">
+          <select class="filter">
+            <option value="coronavirus"></option>
+            <option value="fruit">Fruits</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="meat">Meat</option>
+          </select>
         </div>
       </div>
-      <p><span class="numero">3.</span>Voilá asdfasdf asdf asdf asdf asdf asdf asd fasdf asd f</p>
+
+      <div class="frame">
+        <div class="text"><span class="numero">2.</span>Choose a language</div>
+        <div class="language">
+          <select class="filter">
+            <option value="item"></option>
+            <option value="fruit">Fruits</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="meat">Meat</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="frame">
+        <div class="text"><span class="numero">3.</span>Choose a date</div>
+        <div class="calendar">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="80" value="50" class="slider" id="myRange">
+          </div>
+        </div>
+      </div>
+
       <div class="twcontainer">
-
+        <h2>Tweets Tweets Tweets! </h2>
         <img id="tweets" src="img/Feb16004.png">
         <img id="tweets" src="img/Feb16002.png">
         <img id="tweets" src="img/Feb16003.png">
@@ -146,6 +93,7 @@
         <img id="tweets" src="img/Feb17002.png">
       </div>
     </div>
+
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
