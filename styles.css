@@ -24,12 +24,13 @@ h1 {
     text-align: center;
     line-height: 0;
     padding-top: 40px;
-    font-size: 4em;
+    font-size: 4vw;
+    font
 }
 
 h2 {
     display: block;
-    font-size: 2em;
+    font-size: 3vw;
     border-top: 1px dotted #bdceda;
     width: 100%;
     padding-top: 10px;
@@ -58,7 +59,7 @@ h4 {
 /* Forms section   */
 .filter {
     text-align: left;
-    width: 30%;
+    width: 40%;
     display: block;
     height: 30px;
     background-color: #bdceda;
@@ -66,10 +67,7 @@ h4 {
     font-size: 1em;
     font: white;
     margin-bottom: 30px;
-}
-
-.filter .hashtag {
-    float: left;
+    float: right;
 }
 
 .frame {
@@ -79,11 +77,14 @@ h4 {
     padding-top: 20px
 }
 
-.item option {
-    width: 20px;
+.numero {
+    width: 80%;
+    display: inline;
+    vertical-align: middle;
+    height: 45px;
 }
 
-.numero {
+span {
     border-radius: 20px;
     width: 40px;
     height: 40px;
@@ -91,9 +92,7 @@ h4 {
     font-family: Verdana;
     font-weight: bold;
     color: white;
-    font-size: 2em;
-    display: grid;
-    text-align: center;
+    font-size: 2.5em;
     vertical-align: middle;
     float: left;
     margin-right: 10px;
@@ -101,13 +100,20 @@ h4 {
 }
 
 .slidecontainer {
-    width: 45%;
+    display: inline;
+    height: 30px;
+    float: right;
+    width: 40%
+}
+
+.slider {
+    width: 100%
 }
 
 .text {
     height: 100%;
     width: 35%;
-    font-size: 1em;
+    font-size: .75vw;
     padding: 1em;
     display: block;
     line-height: 1.5;
